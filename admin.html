@@ -1,10 +1,33 @@
-<input id="name" placeholder="اسم الطالب">
-<input id="email" placeholder="الايميل">
-<input id="phone" placeholder="رقم الهاتف">
-<input id="grade" placeholder="الصف">
-<input id="password" placeholder="الباسورد">
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Admin - BODY</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<button onclick="addStudent()">إضافة الطالب</button>
+<div class="container">
+  <h2>إضافة طالب جديد</h2>
+  <input type="text" id="name" placeholder="اسم الطالب">
+  <input type="email" id="email" placeholder="الايميل">
+  <input type="text" id="phone" placeholder="رقم الهاتف">
+  <input type="text" id="grade" placeholder="الصف الدراسي">
+  <input type="password" id="password" placeholder="الباسورد">
+  <button class="btn" onclick="addStudent()">إضافة الطالب</button>
 
+  <h2>رفع كورس جديد</h2>
+  <input type="text" id="title" placeholder="اسم الكورس">
+  <input type="text" id="description" placeholder="وصف الكورس">
+  <input type="text" id="videoURL" placeholder="رابط فيديو YouTube">
+  <button class="btn" onclick="uploadCourse()">رفع الكورس</button>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 <script src="firebase.js"></script>
 <script src="admin.js"></script>
+
+</body>
+</html>
