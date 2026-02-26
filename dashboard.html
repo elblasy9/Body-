@@ -1,1 +1,75 @@
-y
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard - BODY</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+
+<div class="logo">BODY Dashboard</div>
+
+<div class="nav-links">
+
+<a href="dashboard.html">الكورسات</a>
+<a href="profile.html">الملف الشخصي</a>
+<a href="#" onclick="logout()">تسجيل خروج</a>
+
+</div>
+
+</div>
+
+<div class="container">
+
+<h2>الكورسات المتاحة</h2>
+
+<div id="courses">
+
+<div class="card">
+
+<h3>كورس الفيزياء</h3>
+
+<p>شرح كامل للمنهج</p>
+
+<iframe width="100%" height="200"
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+</div>
+
+<div class="card">
+
+<h3>كورس الكيمياء</h3>
+
+<p>شرح وامتحانات</p>
+
+<iframe width="100%" height="200"
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function logout(){
+
+alert("تم تسجيل الخروج");
+
+window.location="login.html";
+
+}
+
+</script>
+
+</body>
+</html>
