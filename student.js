@@ -3,12 +3,20 @@ function login(){
 const email = document.getElementById("email").value;
 const password = document.getElementById("password").value;
 
-auth.signInWithEmailAndPassword(email, password)
-.then(()=>{
- window.location = "dashboard.html";
+auth.signInWithEmailAndPassword(email,password)
+
+.then(function(user){
+
+alert("تم تسجيل الدخول بنجاح");
+
+window.location = "dashboard.html";
+
 })
-.catch(error=>{
- alert(error.message);
+
+.catch(function(error){
+
+alert(error.message);
+
 });
 
 }
